@@ -1,13 +1,15 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EtecShop.Models;
+using EtecShop.Data;
+using EtecShop.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace EtecShop.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
